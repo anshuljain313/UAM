@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_14308_uam_user_a.UAM_Accessfilter</api_name>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>UAM_Accessfilter</name>
+        <script><![CDATA[var UAM_Accessfilter = Class.create();
+UAM_Accessfilter.prototype = {
+    access: function() {
+		var filter ="";
+		filter = "active=true";
+		return filter;
+    },
+
+    type: 'UAM_Accessfilter'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-09-11 14:16:19</sys_created_on>
+        <sys_id>e3f64ea0dba0230012a5e04a48961993</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>UAM_Accessfilter</sys_name>
+        <sys_package display_value="UAM User Access Management" source="x_14308_uam_user_a">5f8028a3db3213004b8de04a48961994</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="UAM User Access Management">5f8028a3db3213004b8de04a48961994</sys_scope>
+        <sys_update_name>sys_script_include_e3f64ea0dba0230012a5e04a48961993</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-11 14:52:11</sys_updated_on>
+    </sys_script_include>
+</record_update>

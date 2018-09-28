@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item display_value="Request Access for X Application">e653416bdb7213004b8de04a48961944</catalog_item>
+        <catalog_variable>IO:5393b058db20230012a5e04a48961989</catalog_variable>
+        <disabled>true</disabled>
+        <field/>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-09-10 13:38:31</sys_created_on>
+        <sys_id>5435b098db20230012a5e04a489619e8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>select_application</sys_name>
+        <sys_package display_value="UAM User Access Management" source="x_14308_uam_user_a">5f8028a3db3213004b8de04a48961994</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="UAM User Access Management">5f8028a3db3213004b8de04a48961994</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_5435b098db20230012a5e04a489619e8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-10 13:38:31</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Make Application and Access Read Only">62e4bc58db20230012a5e04a489619f3</ui_policy>
+        <variable>select_application</variable>
+        <variable_set/>
+        <visible>ignore</visible>
+    </catalog_ui_policy_action>
+</record_update>

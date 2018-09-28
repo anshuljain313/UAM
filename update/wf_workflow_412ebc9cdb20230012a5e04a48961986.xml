@@ -1,0 +1,1555 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="wf_workflow_version">
+    <wf_workflow_version action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <activity_stages>{"activities":{},"subflows":[],"stages":{},"ends":["a9db89e0db20230012a5e04a489619b6"]}</activity_stages>
+        <after_business_rules>false</after_business_rules>
+        <checked_out/>
+        <checked_out_by/>
+        <column_renderer display_value="Workflow-driven">a56213111b030100adca1e094f0713ac</column_renderer>
+        <condition/>
+        <condition_type/>
+        <description>Use this workflow for adding and removing access for any application</description>
+        <expected_sequences>65db89e0db20230012a5e04a489619ba,e1db89e0db20230012a5e04a489619b8,1ddb09e0db20230012a5e04a48961903,deb19d64db20230012a5e04a489619ea,a9db89e0db20230012a5e04a489619b6</expected_sequences>
+        <expected_time>1970-01-01 14:00:00</expected_time>
+        <expected_time_type/>
+        <full_sequences>65db89e0db20230012a5e04a489619ba,e1db89e0db20230012a5e04a489619b8,1ddb09e0db20230012a5e04a48961903,d18d0924db20230012a5e04a48961997,deb19d64db20230012a5e04a489619ea,2ddb89e0db20230012a5e04a489619b1,a9db89e0db20230012a5e04a489619b6</full_sequences>
+        <journal/>
+        <max_activity_count>100</max_activity_count>
+        <name>UAM ADD REMOVE ACCESS NEW</name>
+        <not_cacheable>false</not_cacheable>
+        <on_cancel><![CDATA[// This script executes if the workflow is cancelled.// The global variable context_sys_id contains the sys_id of the cancelled workflow context.]]></on_cancel>
+        <order>100</order>
+        <pin_type>set_by_activity</pin_type>
+        <published>true</published>
+        <relative_duration/>
+        <requires_ert>true</requires_ert>
+        <run_multiple>false</run_multiple>
+        <schedule/>
+        <stage_field>stage</stage_field>
+        <stage_order>computed</stage_order>
+        <start display_value="Begin">65db89e0db20230012a5e04a489619ba</start>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-09-11 09:55:50</sys_created_on>
+        <sys_id>51db09e0db20230012a5e04a48961900</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-11 10:56:28</sys_updated_on>
+        <table>sc_req_item</table>
+        <timezone/>
+        <validated>true</validated>
+        <workflow display_value="UAM ADD REMOVE ACCESS NEW">412ebc9cdb20230012a5e04a48961986</workflow>
+    </wf_workflow_version>
+    <wf_workflow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <description>Use this workflow for adding and removing access for any application</description>
+        <name>UAM ADD REMOVE ACCESS NEW</name>
+        <preview/>
+        <sys_class_name>wf_workflow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-09-10 14:17:31</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>412ebc9cdb20230012a5e04a48961986</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>UAM ADD REMOVE ACCESS NEW</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="UAM User Access Management" source="x_14308_uam_user_a">5f8028a3db3213004b8de04a48961994</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="UAM User Access Management">5f8028a3db3213004b8de04a48961994</sys_scope>
+        <sys_update_name>wf_workflow_412ebc9cdb20230012a5e04a48961986</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-10 14:33:27</sys_updated_on>
+        <table>sc_req_item</table>
+        <template>false</template>
+        <vars/>
+    </wf_workflow>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Completed</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>1100</order>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-09-11 09:55:50</sys_created_on>
+        <sys_id>11db09e0db20230012a5e04a48961902</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-11 09:55:50</sys_updated_on>
+        <value>complete</value>
+        <workflow_version display_value="UAM ADD REMOVE ACCESS NEW">51db09e0db20230012a5e04a48961900</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Delivery</name>
+        <ola>1970-01-03 00:00:00</ola>
+        <order>140</order>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-09-11 09:55:50</sys_created_on>
+        <sys_id>15db09e0db20230012a5e04a48961902</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-11 09:55:50</sys_updated_on>
+        <value>delivery</value>
+        <workflow_version display_value="UAM ADD REMOVE ACCESS NEW">51db09e0db20230012a5e04a48961900</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Fulfillment</name>
+        <ola>1970-01-02 00:00:00</ola>
+        <order>120</order>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-09-11 09:55:50</sys_created_on>
+        <sys_id>9ddb09e0db20230012a5e04a48961901</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-11 09:55:50</sys_updated_on>
+        <value>fulfillment</value>
+        <workflow_version display_value="UAM ADD REMOVE ACCESS NEW">51db09e0db20230012a5e04a48961900</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Request Cancelled</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>1000</order>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-09-11 09:55:50</sys_created_on>
+        <sys_id>91db09e0db20230012a5e04a48961902</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-11 09:55:50</sys_updated_on>
+        <value>Request Cancelled</value>
+        <workflow_version display_value="UAM ADD REMOVE ACCESS NEW">51db09e0db20230012a5e04a48961900</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Request Approved</name>
+        <ola>1970-01-01 00:00:00</ola>
+        <order>90</order>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-09-11 09:55:50</sys_created_on>
+        <sys_id>d9db09e0db20230012a5e04a48961901</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-11 09:55:50</sys_updated_on>
+        <value>request_approved</value>
+        <workflow_version display_value="UAM ADD REMOVE ACCESS NEW">51db09e0db20230012a5e04a48961900</workflow_version>
+    </wf_stage>
+    <wf_stage action="INSERT_OR_UPDATE">
+        <name>Waiting for Approval</name>
+        <ola>1970-01-02 00:00:00</ola>
+        <order>100</order>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-09-11 09:55:50</sys_created_on>
+        <sys_id>95db09e0db20230012a5e04a48961902</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-11 09:55:50</sys_updated_on>
+        <value>waiting_for_approval</value>
+        <workflow_version display_value="UAM ADD REMOVE ACCESS NEW">51db09e0db20230012a5e04a48961900</workflow_version>
+    </wf_stage>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Switch">f84eda480a0a3c1800a6fa8c7badf346</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>8</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>access type</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-09-11 09:55:50</sys_created_on>
+        <sys_id>e1db89e0db20230012a5e04a489619b8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-11 10:24:20</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="UAM ADD REMOVE ACCESS NEW">51db09e0db20230012a5e04a48961900</workflow_version>
+        <x>138</x>
+        <y>108</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=e1db89e0db20230012a5e04a489619b8"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>e1db89e0db20230012a5e04a489619b8</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-09-11 09:55:50</sys_created_on>
+        <sys_id>2ddb89e0db20230012a5e04a489619b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-11 09:55:50</sys_updated_on>
+        <value>variable</value>
+        <variable display_value="">f85385830a0a3c18008599b17b971cbd</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>e1db89e0db20230012a5e04a489619b8</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-09-11 09:55:50</sys_created_on>
+        <sys_id>69db89e0db20230012a5e04a489619b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-11 09:55:50</sys_updated_on>
+        <value/>
+        <variable display_value="">f8575c7d0a0a3c1800b8f4d25403c852</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>e1db89e0db20230012a5e04a489619b8</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-09-11 09:55:50</sys_created_on>
+        <sys_id>eddb89e0db20230012a5e04a489619b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-11 09:55:50</sys_updated_on>
+        <value>05347418db20230012a5e04a4896192d</value>
+        <variable display_value="">f855a43e0a0a3c180106a59800a50a22</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>e1db89e0db20230012a5e04a489619b8</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-09-11 09:55:50</sys_created_on>
+        <sys_id>2ddb89e0db20230012a5e04a489619b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-11 09:55:50</sys_updated_on>
+        <value>variable</value>
+        <variable display_value="">f85385830a0a3c18008599b17b971cbd</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>e1db89e0db20230012a5e04a489619b8</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-09-11 09:55:50</sys_created_on>
+        <sys_id>eddb89e0db20230012a5e04a489619b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-11 09:55:50</sys_updated_on>
+        <value>05347418db20230012a5e04a4896192d</value>
+        <variable display_value="">f855a43e0a0a3c180106a59800a50a22</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>e1db89e0db20230012a5e04a489619b8</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-09-11 09:55:50</sys_created_on>
+        <sys_id>69db89e0db20230012a5e04a489619b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-11 09:55:50</sys_updated_on>
+        <value/>
+        <variable display_value="">f8575c7d0a0a3c1800b8f4d25403c852</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="access type">e1db89e0db20230012a5e04a489619b8</activity>
+        <condition>activity.result == 'Request Access'</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Request Access</name>
+        <order>1000</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-09-11 09:55:50</sys_created_on>
+        <sys_id>e5db89e0db20230012a5e04a489619b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-11 09:55:50</sys_updated_on>
+    </wf_condition>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="access type">e1db89e0db20230012a5e04a489619b8</activity>
+        <condition>activity.result == 'Revoke Access'</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Revoke Access</name>
+        <order>1001</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-09-11 09:55:50</sys_created_on>
+        <sys_id>65db89e0db20230012a5e04a489619b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-11 09:55:50</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>10</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Add Access entries</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-09-11 10:23:34</sys_created_on>
+        <sys_id>deb19d64db20230012a5e04a489619ea</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-11 10:24:51</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="UAM ADD REMOVE ACCESS NEW">51db09e0db20230012a5e04a48961900</workflow_version>
+        <x>564</x>
+        <y>51</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=deb19d64db20230012a5e04a489619ea"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>deb19d64db20230012a5e04a489619ea</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-09-11 10:23:34</sys_created_on>
+        <sys_id>2b229564db20230012a5e04a48961926</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-11 10:23:34</sys_updated_on>
+        <value>&#13;
+var appl = current.variables.select_application;&#13;
+var usr = current.variables.requested_for;&#13;
+//Below code is for adding user to access entry in UAM&#13;
+var list = current.variables.select_access.toString();&#13;
+flag = false;&#13;
+var access_parent = '';&#13;
+var par = new GlideRecord('x_14308_uam_user_a_user_to_application');&#13;
+	par.addQuery('active', 'true');&#13;
+	par.addQuery('user', usr);&#13;
+	par.addQuery('application', appl);&#13;
+	par.query();&#13;
+	&#13;
+	if(par.next())&#13;
+		{&#13;
+		access_parent = par.sys_id;&#13;
+	}&#13;
+&#13;
+var listArr = list.split(',');&#13;
+//gs.addInfoMessage(listArr);&#13;
+for (var key in listArr) {&#13;
+	&#13;
+	// Get the list of Access from the catalog&#13;
+	var access = new GlideRecord('x_14308_uam_user_a_user_to_access');&#13;
+	access.addQuery('user', usr);&#13;
+	access.addQuery('application', access_parent);&#13;
+	access.addQuery('access', listArr[key]);&#13;
+	access.addQuery('active',true);&#13;
+	access.query();&#13;
+	&#13;
+	// Check if an Active access already exist for the user, do nothing&#13;
+	if(access.next())&#13;
+		{&#13;
+			flag = true;		&#13;
+	}&#13;
+	&#13;
+	else if(access_parent) // if the access does not exist or is inactive, create a new record&#13;
+		{&#13;
+		var gr2 = new GlideRecord('x_14308_uam_user_a_user_to_access');&#13;
+		gr2.initialize();&#13;
+		gr2.access = listArr[key];&#13;
+		gr2.user = usr;&#13;
+		gr2.granted_ritm = current.sys_id;&#13;
+		gr2.active = true;&#13;
+		gr2.granted_date = new GlideDateTime();&#13;
+		gr2.application = access_parent;&#13;
+		gr2.insert();&#13;
+			//gs.addInfoMessage('entry to access done');&#13;
+	}&#13;
+ }</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>deb19d64db20230012a5e04a489619ea</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-09-11 10:23:34</sys_created_on>
+        <sys_id>2b229564db20230012a5e04a48961926</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-11 10:23:34</sys_updated_on>
+        <value>&#13;
+var appl = current.variables.select_application;&#13;
+var usr = current.variables.requested_for;&#13;
+//Below code is for adding user to access entry in UAM&#13;
+var list = current.variables.select_access.toString();&#13;
+flag = false;&#13;
+var access_parent = '';&#13;
+var par = new GlideRecord('x_14308_uam_user_a_user_to_application');&#13;
+	par.addQuery('active', 'true');&#13;
+	par.addQuery('user', usr);&#13;
+	par.addQuery('application', appl);&#13;
+	par.query();&#13;
+	&#13;
+	if(par.next())&#13;
+		{&#13;
+		access_parent = par.sys_id;&#13;
+	}&#13;
+&#13;
+var listArr = list.split(',');&#13;
+//gs.addInfoMessage(listArr);&#13;
+for (var key in listArr) {&#13;
+	&#13;
+	// Get the list of Access from the catalog&#13;
+	var access = new GlideRecord('x_14308_uam_user_a_user_to_access');&#13;
+	access.addQuery('user', usr);&#13;
+	access.addQuery('application', access_parent);&#13;
+	access.addQuery('access', listArr[key]);&#13;
+	access.addQuery('active',true);&#13;
+	access.query();&#13;
+	&#13;
+	// Check if an Active access already exist for the user, do nothing&#13;
+	if(access.next())&#13;
+		{&#13;
+			flag = true;		&#13;
+	}&#13;
+	&#13;
+	else if(access_parent) // if the access does not exist or is inactive, create a new record&#13;
+		{&#13;
+		var gr2 = new GlideRecord('x_14308_uam_user_a_user_to_access');&#13;
+		gr2.initialize();&#13;
+		gr2.access = listArr[key];&#13;
+		gr2.user = usr;&#13;
+		gr2.granted_ritm = current.sys_id;&#13;
+		gr2.active = true;&#13;
+		gr2.granted_date = new GlideDateTime();&#13;
+		gr2.application = access_parent;&#13;
+		gr2.insert();&#13;
+			//gs.addInfoMessage('entry to access done');&#13;
+	}&#13;
+ }</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Add Access entries">deb19d64db20230012a5e04a489619ea</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-09-11 10:23:34</sys_created_on>
+        <sys_id>af229564db20230012a5e04a48961926</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-11 10:23:34</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>6</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Add entry for user to application in UAM</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-09-11 09:55:50</sys_created_on>
+        <sys_id>1ddb09e0db20230012a5e04a48961903</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-11 10:24:31</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="UAM ADD REMOVE ACCESS NEW">51db09e0db20230012a5e04a48961900</workflow_version>
+        <x>356</x>
+        <y>49</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=1ddb09e0db20230012a5e04a48961903"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1ddb09e0db20230012a5e04a48961903</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-09-11 09:55:50</sys_created_on>
+        <sys_id>55db09e0db20230012a5e04a48961904</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-11 10:21:24</sys_updated_on>
+        <value>//var app  = workflow.scratchpad.application;&#13;
+//var app_sys = workflow.scratchpad.application_name;&#13;
+//var reqtype = workflow.scratchpad.request_type;&#13;
+var appl  = current.variables.select_application;&#13;
+var usr = current.variables.requested_for;&#13;
+//gs.addInfoMessage(usr);&#13;
+var flag = false;&#13;
+//gs.addInfoMessage(app);&#13;
+var app = new GlideRecord('x_14308_uam_user_a_user_to_application');&#13;
+app.addQuery('application', appl);&#13;
+app.addQuery('user', usr);&#13;
+app.addQuery('active',true);&#13;
+app.query();&#13;
+&#13;
+//Check if an Active application already exist in the table do nothing&#13;
+if (app.next())&#13;
+	{&#13;
+		flag = true;&#13;
+		//gs.addInfoMessage('Entry Present');&#13;
+	}&#13;
+else// If the application does not exist, create a new record&#13;
+	{&#13;
+		//gs.addInfoMessage('entry not present');&#13;
+	var gr = new GlideRecord('x_14308_uam_user_a_user_to_application');&#13;
+	gr.initialize();&#13;
+	gr.application = current.variables.select_application;&#13;
+	gr.user = current.variables.requested_for;&#13;
+	gr.active = true;&#13;
+	gr.granted_date = new GlideDateTime();&#13;
+	gr.granted_ritm = current.sys_id;&#13;
+	gr.insert();&#13;
+		//gs.addInfoMessage('entry to application done');&#13;
+}&#13;
+&#13;
+</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1ddb09e0db20230012a5e04a48961903</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-09-11 09:55:50</sys_created_on>
+        <sys_id>55db09e0db20230012a5e04a48961904</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-11 10:21:24</sys_updated_on>
+        <value>//var app  = workflow.scratchpad.application;&#13;
+//var app_sys = workflow.scratchpad.application_name;&#13;
+//var reqtype = workflow.scratchpad.request_type;&#13;
+var appl  = current.variables.select_application;&#13;
+var usr = current.variables.requested_for;&#13;
+//gs.addInfoMessage(usr);&#13;
+var flag = false;&#13;
+//gs.addInfoMessage(app);&#13;
+var app = new GlideRecord('x_14308_uam_user_a_user_to_application');&#13;
+app.addQuery('application', appl);&#13;
+app.addQuery('user', usr);&#13;
+app.addQuery('active',true);&#13;
+app.query();&#13;
+&#13;
+//Check if an Active application already exist in the table do nothing&#13;
+if (app.next())&#13;
+	{&#13;
+		flag = true;&#13;
+		//gs.addInfoMessage('Entry Present');&#13;
+	}&#13;
+else// If the application does not exist, create a new record&#13;
+	{&#13;
+		//gs.addInfoMessage('entry not present');&#13;
+	var gr = new GlideRecord('x_14308_uam_user_a_user_to_application');&#13;
+	gr.initialize();&#13;
+	gr.application = current.variables.select_application;&#13;
+	gr.user = current.variables.requested_for;&#13;
+	gr.active = true;&#13;
+	gr.granted_date = new GlideDateTime();&#13;
+	gr.granted_ritm = current.sys_id;&#13;
+	gr.insert();&#13;
+		//gs.addInfoMessage('entry to application done');&#13;
+}&#13;
+&#13;
+</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Add entry for user to application in UAM">1ddb09e0db20230012a5e04a48961903</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-09-11 09:55:50</sys_created_on>
+        <sys_id>d1db89e0db20230012a5e04a489619b1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-11 09:55:50</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Begin">c7a5e32c0a0a0b3a002377c24ed8ea76</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>1</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>Begin</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-09-11 09:55:50</sys_created_on>
+        <sys_id>65db89e0db20230012a5e04a489619ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-11 09:55:50</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="UAM ADD REMOVE ACCESS NEW">51db09e0db20230012a5e04a48961900</workflow_version>
+        <x>20</x>
+        <y>20</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=65db89e0db20230012a5e04a489619ba"/>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Begin">65db89e0db20230012a5e04a489619ba</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-09-11 09:55:50</sys_created_on>
+        <sys_id>addb89e0db20230012a5e04a489619ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-11 09:55:50</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="If">98f621ca0a0a0b5900f7c291f5e45a0e</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>4</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Check if application present or not</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-09-11 09:55:50</sys_created_on>
+        <sys_id>addb89e0db20230012a5e04a489619b4</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-11 10:24:00</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="UAM ADD REMOVE ACCESS NEW">51db09e0db20230012a5e04a48961900</workflow_version>
+        <x>224</x>
+        <y>404</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=addb89e0db20230012a5e04a489619b4"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>addb89e0db20230012a5e04a489619b4</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-09-11 09:55:50</sys_created_on>
+        <sys_id>21db89e0db20230012a5e04a489619b5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-11 09:55:50</sys_updated_on>
+        <value/>
+        <variable display_value="">493cba6a0a6a803f07df24b118473551</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>addb89e0db20230012a5e04a489619b4</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-09-11 09:55:50</sys_created_on>
+        <sys_id>a5db89e0db20230012a5e04a489619b5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-11 09:55:50</sys_updated_on>
+        <value>// This script needs to set answer to 'yes' or 'no' to indicate the state of the activity.&#13;
+//&#13;
+// For example,&#13;
+//&#13;
+//   answer = ifScript();&#13;
+//&#13;
+//   function ifScript() {&#13;
+//      if (condition is true) {&#13;
+//         return 'yes';&#13;
+//      }&#13;
+//      return 'no';&#13;
+//   }&#13;
+answer = ifScript();&#13;
+&#13;
+function ifScript() {&#13;
+	var req = current.sys_id;&#13;
+	var app_sys = "";&#13;
+	var reqtype = "";&#13;
+	var ritm = new GlideRecord('sc_req_item');&#13;
+	ritm.addQuery('sys_id', req);&#13;
+	ritm.query();&#13;
+	&#13;
+	if(ritm.next())&#13;
+		{&#13;
+		app_sys = ritm.cat_item.u_select_application_name;&#13;
+		reqtype = ritm.cat_item.u_type_of_request;&#13;
+	}&#13;
+	workflow.scratchpad.application_name = app_sys;&#13;
+	workflow.scratchpad.request_type = reqtype;&#13;
+	&#13;
+	if (app_sys !=  '') &#13;
+	{&#13;
+		return 'yes';&#13;
+	}&#13;
+	return 'no';&#13;
+}</value>
+        <variable display_value="">c35e50810a0a0ba96248a709b450fc32</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>addb89e0db20230012a5e04a489619b4</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-09-11 09:55:50</sys_created_on>
+        <sys_id>e1db89e0db20230012a5e04a489619b5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-11 09:55:50</sys_updated_on>
+        <value>1</value>
+        <variable display_value="">493d2c1d0a6a803f3217a75738ea3289</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>addb89e0db20230012a5e04a489619b4</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-09-11 09:55:50</sys_created_on>
+        <sys_id>21db89e0db20230012a5e04a489619b5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-11 09:55:50</sys_updated_on>
+        <value/>
+        <variable display_value="">493cba6a0a6a803f07df24b118473551</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>addb89e0db20230012a5e04a489619b4</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-09-11 09:55:50</sys_created_on>
+        <sys_id>e1db89e0db20230012a5e04a489619b5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-11 09:55:50</sys_updated_on>
+        <value>1</value>
+        <variable display_value="">493d2c1d0a6a803f3217a75738ea3289</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>addb89e0db20230012a5e04a489619b4</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-09-11 09:55:50</sys_created_on>
+        <sys_id>a5db89e0db20230012a5e04a489619b5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-11 09:55:50</sys_updated_on>
+        <value>// This script needs to set answer to 'yes' or 'no' to indicate the state of the activity.&#13;
+//&#13;
+// For example,&#13;
+//&#13;
+//   answer = ifScript();&#13;
+//&#13;
+//   function ifScript() {&#13;
+//      if (condition is true) {&#13;
+//         return 'yes';&#13;
+//      }&#13;
+//      return 'no';&#13;
+//   }&#13;
+answer = ifScript();&#13;
+&#13;
+function ifScript() {&#13;
+	var req = current.sys_id;&#13;
+	var app_sys = "";&#13;
+	var reqtype = "";&#13;
+	var ritm = new GlideRecord('sc_req_item');&#13;
+	ritm.addQuery('sys_id', req);&#13;
+	ritm.query();&#13;
+	&#13;
+	if(ritm.next())&#13;
+		{&#13;
+		app_sys = ritm.cat_item.u_select_application_name;&#13;
+		reqtype = ritm.cat_item.u_type_of_request;&#13;
+	}&#13;
+	workflow.scratchpad.application_name = app_sys;&#13;
+	workflow.scratchpad.request_type = reqtype;&#13;
+	&#13;
+	if (app_sys !=  '') &#13;
+	{&#13;
+		return 'yes';&#13;
+	}&#13;
+	return 'no';&#13;
+}</value>
+        <variable display_value="">c35e50810a0a0ba96248a709b450fc32</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Check if application present or not">addb89e0db20230012a5e04a489619b4</activity>
+        <condition>activity.result == 'no'</condition>
+        <condition_default display_value="No">c1eff6430a0a0b59000f955abe842c94</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>No</name>
+        <order>200</order>
+        <short_description/>
+        <skip_during_generate>true</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-09-11 09:55:50</sys_created_on>
+        <sys_id>2ddb89e0db20230012a5e04a489619b5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-11 09:55:50</sys_updated_on>
+    </wf_condition>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Check if application present or not">addb89e0db20230012a5e04a489619b4</activity>
+        <condition>activity.result == 'yes'</condition>
+        <condition_default display_value="Yes">c1ef63200a0a0b59005ef89bae78feb7</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Yes</name>
+        <order>100</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-09-11 09:55:50</sys_created_on>
+        <sys_id>a9db89e0db20230012a5e04a489619b5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-11 09:55:50</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="If">98f621ca0a0a0b5900f7c291f5e45a0e</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>5</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>check if this req is for request access</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-09-11 09:55:50</sys_created_on>
+        <sys_id>25db89e0db20230012a5e04a489619b3</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-11 10:23:56</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="UAM ADD REMOVE ACCESS NEW">51db09e0db20230012a5e04a48961900</workflow_version>
+        <x>20</x>
+        <y>407</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=25db89e0db20230012a5e04a489619b3"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>25db89e0db20230012a5e04a489619b3</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-09-11 09:55:50</sys_created_on>
+        <sys_id>21db89e0db20230012a5e04a489619b4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-11 09:55:50</sys_updated_on>
+        <value>// // This script needs to set answer to 'yes' or 'no' to indicate the state of the activity.&#13;
+// //&#13;
+// // For example,&#13;
+// //&#13;
+//    answer = ifScript();&#13;
+&#13;
+//    function ifScript() {&#13;
+// //      if (condition is true) {&#13;
+// //         return 'yes';&#13;
+// //      }&#13;
+// //      return 'no';&#13;
+&#13;
+// 	var app_sys = workflow.scratchpad.application_name;&#13;
+// 	var reqtype = workflow.scratchpad.request_type;&#13;
+	&#13;
+// 	if (reqtype ==  'Request Access') &#13;
+// 	{&#13;
+// 		return 'yes';&#13;
+// 	}&#13;
+// 	return 'no';&#13;
+//    }</value>
+        <variable display_value="">c35e50810a0a0ba96248a709b450fc32</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>25db89e0db20230012a5e04a489619b3</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-09-11 09:55:50</sys_created_on>
+        <sys_id>6ddb89e0db20230012a5e04a489619b3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-11 09:55:50</sys_updated_on>
+        <value>1</value>
+        <variable display_value="">493d2c1d0a6a803f3217a75738ea3289</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>25db89e0db20230012a5e04a489619b3</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-09-11 09:55:50</sys_created_on>
+        <sys_id>a9db89e0db20230012a5e04a489619b3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-11 09:55:50</sys_updated_on>
+        <value>variables.05347418db20230012a5e04a4896192d=Request Access^EQ</value>
+        <variable display_value="">493cba6a0a6a803f07df24b118473551</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>25db89e0db20230012a5e04a489619b3</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-09-11 09:55:50</sys_created_on>
+        <sys_id>a9db89e0db20230012a5e04a489619b3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-11 09:55:50</sys_updated_on>
+        <value>variables.05347418db20230012a5e04a4896192d=Request Access^EQ</value>
+        <variable display_value="">493cba6a0a6a803f07df24b118473551</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>25db89e0db20230012a5e04a489619b3</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-09-11 09:55:50</sys_created_on>
+        <sys_id>6ddb89e0db20230012a5e04a489619b3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-11 09:55:50</sys_updated_on>
+        <value>1</value>
+        <variable display_value="">493d2c1d0a6a803f3217a75738ea3289</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>25db89e0db20230012a5e04a489619b3</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-09-11 09:55:50</sys_created_on>
+        <sys_id>21db89e0db20230012a5e04a489619b4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-11 09:55:50</sys_updated_on>
+        <value>// // This script needs to set answer to 'yes' or 'no' to indicate the state of the activity.&#13;
+// //&#13;
+// // For example,&#13;
+// //&#13;
+//    answer = ifScript();&#13;
+&#13;
+//    function ifScript() {&#13;
+// //      if (condition is true) {&#13;
+// //         return 'yes';&#13;
+// //      }&#13;
+// //      return 'no';&#13;
+&#13;
+// 	var app_sys = workflow.scratchpad.application_name;&#13;
+// 	var reqtype = workflow.scratchpad.request_type;&#13;
+	&#13;
+// 	if (reqtype ==  'Request Access') &#13;
+// 	{&#13;
+// 		return 'yes';&#13;
+// 	}&#13;
+// 	return 'no';&#13;
+//    }</value>
+        <variable display_value="">c35e50810a0a0ba96248a709b450fc32</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="check if this req is for request access">25db89e0db20230012a5e04a489619b3</activity>
+        <condition>activity.result == 'no'</condition>
+        <condition_default display_value="No">c1eff6430a0a0b59000f955abe842c94</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>No</name>
+        <order>200</order>
+        <short_description/>
+        <skip_during_generate>true</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-09-11 09:55:50</sys_created_on>
+        <sys_id>a5db89e0db20230012a5e04a489619b4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-11 09:55:50</sys_updated_on>
+    </wf_condition>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="check if this req is for request access">25db89e0db20230012a5e04a489619b3</activity>
+        <condition>activity.result == 'yes'</condition>
+        <condition_default display_value="Yes">c1ef63200a0a0b59005ef89bae78feb7</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Yes</name>
+        <order>100</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-09-11 09:55:50</sys_created_on>
+        <sys_id>29db89e0db20230012a5e04a489619b4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-11 09:55:50</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="End">c7a66f7d0a0a0b3a004544a6d2f14076</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>2</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>End</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-09-11 09:55:50</sys_created_on>
+        <sys_id>a9db89e0db20230012a5e04a489619b6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-11 09:55:50</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="UAM ADD REMOVE ACCESS NEW">51db09e0db20230012a5e04a48961900</workflow_version>
+        <x>920</x>
+        <y>468</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=a9db89e0db20230012a5e04a489619b6"/>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>7</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Revoke access for application if there are no entries left for this application access</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-09-11 09:55:50</sys_created_on>
+        <sys_id>2ddb89e0db20230012a5e04a489619b1</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-11 10:24:47</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="UAM ADD REMOVE ACCESS NEW">51db09e0db20230012a5e04a48961900</workflow_version>
+        <x>567</x>
+        <y>220</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=2ddb89e0db20230012a5e04a489619b1"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>2ddb89e0db20230012a5e04a489619b1</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-09-11 09:55:50</sys_created_on>
+        <sys_id>addb89e0db20230012a5e04a489619b1</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-11 10:16:51</sys_updated_on>
+        <value>var app = current.variables.select_application;&#13;
+var usr = current.variables.requested_for;&#13;
+var count = 0;&#13;
+var appsysid = "";&#13;
+var application = new GlideRecord('x_14308_uam_user_a_user_to_application');&#13;
+	application.addQuery('user',usr);&#13;
+	application.addQuery('application',app);&#13;
+	application.addQuery('active',true);&#13;
+	application.query();&#13;
+		if(application.next())&#13;
+			{&#13;
+				appsysid = application.sys_id;&#13;
+				//gs.addInfoMessage(app1sysid);&#13;
+			}&#13;
+	var access = new GlideRecord('x_14308_uam_user_a_user_to_access');&#13;
+	access.addQuery('user', usr);&#13;
+	access.addQuery('application', appsysid);&#13;
+	access.addQuery('active',true);&#13;
+	access.query();&#13;
+	// Check if an Active access already exist for the user, do nothing&#13;
+	while(access.next())&#13;
+		{&#13;
+			count = count +1;&#13;
+	}&#13;
+&#13;
+	if(count &lt;= 0)&#13;
+		{&#13;
+			application.active = false;&#13;
+			application.removed_date = new GlideDateTime();&#13;
+			application.removed_ritm = current.sys_id;&#13;
+			application.update();&#13;
+		}</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>2ddb89e0db20230012a5e04a489619b1</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-09-11 09:55:50</sys_created_on>
+        <sys_id>addb89e0db20230012a5e04a489619b1</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-11 10:16:51</sys_updated_on>
+        <value>var app = current.variables.select_application;&#13;
+var usr = current.variables.requested_for;&#13;
+var count = 0;&#13;
+var appsysid = "";&#13;
+var application = new GlideRecord('x_14308_uam_user_a_user_to_application');&#13;
+	application.addQuery('user',usr);&#13;
+	application.addQuery('application',app);&#13;
+	application.addQuery('active',true);&#13;
+	application.query();&#13;
+		if(application.next())&#13;
+			{&#13;
+				appsysid = application.sys_id;&#13;
+				//gs.addInfoMessage(app1sysid);&#13;
+			}&#13;
+	var access = new GlideRecord('x_14308_uam_user_a_user_to_access');&#13;
+	access.addQuery('user', usr);&#13;
+	access.addQuery('application', appsysid);&#13;
+	access.addQuery('active',true);&#13;
+	access.query();&#13;
+	// Check if an Active access already exist for the user, do nothing&#13;
+	while(access.next())&#13;
+		{&#13;
+			count = count +1;&#13;
+	}&#13;
+&#13;
+	if(count &lt;= 0)&#13;
+		{&#13;
+			application.active = false;&#13;
+			application.removed_date = new GlideDateTime();&#13;
+			application.removed_ritm = current.sys_id;&#13;
+			application.update();&#13;
+		}</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Revoke access for application if there are no entries left for this application access">2ddb89e0db20230012a5e04a489619b1</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-09-11 09:55:50</sys_created_on>
+        <sys_id>a1db89e0db20230012a5e04a489619b2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-11 09:55:50</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>9</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Update Selected Access Entries</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-09-11 10:04:09</sys_created_on>
+        <sys_id>d18d0924db20230012a5e04a48961997</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-11 10:24:39</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="UAM ADD REMOVE ACCESS NEW">51db09e0db20230012a5e04a48961900</workflow_version>
+        <x>356</x>
+        <y>222</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=d18d0924db20230012a5e04a48961997"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d18d0924db20230012a5e04a48961997</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-09-11 10:04:09</sys_created_on>
+        <sys_id>cbbdc124db20230012a5e04a48961927</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-11 10:18:56</sys_updated_on>
+        <value>var usr = current.variables.requested_for;&#13;
+var app = current.variables.select_application;&#13;
+var appsysid = "";&#13;
+var application = new GlideRecord('x_14308_uam_user_a_user_to_application');&#13;
+	application.addQuery('user',usr);&#13;
+	application.addQuery('application',app);&#13;
+	application.addQuery('active',true);&#13;
+	application.query();&#13;
+		if(application.next())&#13;
+			{&#13;
+				appsysid = application.sys_id;&#13;
+				//gs.addInfoMessage(app1sysid);&#13;
+			}&#13;
+&#13;
+var list = current.variables.select_access.toString();&#13;
+&#13;
+&#13;
+var listArr = list.split(',');&#13;
+&#13;
+for (var key in listArr) {&#13;
+	&#13;
+	// Get the list of Access from the catalog&#13;
+	var access = new GlideRecord('x_14308_uam_user_a_user_to_access');&#13;
+	access.addQuery('user', usr);&#13;
+	access.addQuery('application', appsysid);&#13;
+	access.addQuery('access', listArr[key]);&#13;
+	access.addQuery('active',true);&#13;
+	access.query();&#13;
+	//gs.addInfoMessage(access.access);&#13;
+	// Check if an Active access already exist for the user, do nothing&#13;
+	while(access.next())&#13;
+		{&#13;
+			//application = access.application;&#13;
+			access.active = false;&#13;
+			access.removed_date = new GlideDateTime();&#13;
+			access.removed_ritm = current.sys_id;&#13;
+			access.update();&#13;
+	}&#13;
+&#13;
+}&#13;
+</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d18d0924db20230012a5e04a48961997</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-09-11 10:04:09</sys_created_on>
+        <sys_id>cbbdc124db20230012a5e04a48961927</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-11 10:18:56</sys_updated_on>
+        <value>var usr = current.variables.requested_for;&#13;
+var app = current.variables.select_application;&#13;
+var appsysid = "";&#13;
+var application = new GlideRecord('x_14308_uam_user_a_user_to_application');&#13;
+	application.addQuery('user',usr);&#13;
+	application.addQuery('application',app);&#13;
+	application.addQuery('active',true);&#13;
+	application.query();&#13;
+		if(application.next())&#13;
+			{&#13;
+				appsysid = application.sys_id;&#13;
+				//gs.addInfoMessage(app1sysid);&#13;
+			}&#13;
+&#13;
+var list = current.variables.select_access.toString();&#13;
+&#13;
+&#13;
+var listArr = list.split(',');&#13;
+&#13;
+for (var key in listArr) {&#13;
+	&#13;
+	// Get the list of Access from the catalog&#13;
+	var access = new GlideRecord('x_14308_uam_user_a_user_to_access');&#13;
+	access.addQuery('user', usr);&#13;
+	access.addQuery('application', appsysid);&#13;
+	access.addQuery('access', listArr[key]);&#13;
+	access.addQuery('active',true);&#13;
+	access.query();&#13;
+	//gs.addInfoMessage(access.access);&#13;
+	// Check if an Active access already exist for the user, do nothing&#13;
+	while(access.next())&#13;
+		{&#13;
+			//application = access.application;&#13;
+			access.active = false;&#13;
+			access.removed_date = new GlideDateTime();&#13;
+			access.removed_ritm = current.sys_id;&#13;
+			access.update();&#13;
+	}&#13;
+&#13;
+}&#13;
+</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Update Selected Access Entries">d18d0924db20230012a5e04a48961997</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-09-11 10:04:09</sys_created_on>
+        <sys_id>c3bdc124db20230012a5e04a48961928</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-11 10:04:09</sys_updated_on>
+    </wf_condition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">af229564db20230012a5e04a48961926</condition>
+        <from display_value="Add Access entries">deb19d64db20230012a5e04a489619ea</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-09-11 10:23:47</sys_created_on>
+        <sys_id>3a3251e4db20230012a5e04a48961933</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-11 10:23:47</sys_updated_on>
+        <to display_value="End">a9db89e0db20230012a5e04a489619b6</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="No">a5db89e0db20230012a5e04a489619b4</condition>
+        <from display_value="check if this req is for request access">25db89e0db20230012a5e04a489619b3</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-09-11 10:24:06</sys_created_on>
+        <sys_id>534251e4db20230012a5e04a48961934</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-11 10:24:06</sys_updated_on>
+        <to display_value="Check if application present or not">addb89e0db20230012a5e04a489619b4</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Yes">a9db89e0db20230012a5e04a489619b5</condition>
+        <from display_value="Check if application present or not">addb89e0db20230012a5e04a489619b4</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-09-11 10:24:10</sys_created_on>
+        <sys_id>5c529d24db20230012a5e04a48961974</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-11 10:24:10</sys_updated_on>
+        <to display_value="check if this req is for request access">25db89e0db20230012a5e04a489619b3</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">addb89e0db20230012a5e04a489619ba</condition>
+        <from display_value="Begin">65db89e0db20230012a5e04a489619ba</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-09-11 09:55:50</sys_created_on>
+        <sys_id>69db89e0db20230012a5e04a489619bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-11 09:55:50</sys_updated_on>
+        <to display_value="access type">e1db89e0db20230012a5e04a489619b8</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">d1db89e0db20230012a5e04a489619b1</condition>
+        <from display_value="Add entry for user to application in UAM">1ddb09e0db20230012a5e04a48961903</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-09-11 10:23:44</sys_created_on>
+        <sys_id>82329d64db20230012a5e04a489619f5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-11 10:23:44</sys_updated_on>
+        <to display_value="Add Access entries">deb19d64db20230012a5e04a489619ea</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Revoke Access">65db89e0db20230012a5e04a489619b9</condition>
+        <from display_value="access type">e1db89e0db20230012a5e04a489619b8</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-09-11 10:04:25</sys_created_on>
+        <sys_id>83cd85e0db20230012a5e04a4896195c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-11 10:04:25</sys_updated_on>
+        <to display_value="Update Selected Access Entries">d18d0924db20230012a5e04a48961997</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">a1db89e0db20230012a5e04a489619b2</condition>
+        <from display_value="Revoke access for application if there are no entries left for this application access">2ddb89e0db20230012a5e04a489619b1</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-09-11 09:55:50</sys_created_on>
+        <sys_id>addb89e0db20230012a5e04a489619bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-11 09:55:50</sys_updated_on>
+        <to display_value="End">a9db89e0db20230012a5e04a489619b6</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Request Access">e5db89e0db20230012a5e04a489619b9</condition>
+        <from display_value="access type">e1db89e0db20230012a5e04a489619b8</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-09-11 09:55:50</sys_created_on>
+        <sys_id>e5db89e0db20230012a5e04a489619bc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-11 09:55:50</sys_updated_on>
+        <to display_value="Add entry for user to application in UAM">1ddb09e0db20230012a5e04a48961903</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="No">2ddb89e0db20230012a5e04a489619b5</condition>
+        <from display_value="Check if application present or not">addb89e0db20230012a5e04a489619b4</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-09-11 10:24:13</sys_created_on>
+        <sys_id>f0525da4db20230012a5e04a4896193b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-11 10:24:13</sys_updated_on>
+        <to display_value="check if this req is for request access">25db89e0db20230012a5e04a489619b3</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">c3bdc124db20230012a5e04a48961928</condition>
+        <from display_value="Update Selected Access Entries">d18d0924db20230012a5e04a48961997</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-09-11 10:04:28</sys_created_on>
+        <sys_id>f7cdc124db20230012a5e04a48961953</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-11 10:04:28</sys_updated_on>
+        <to display_value="Revoke access for application if there are no entries left for this application access">2ddb89e0db20230012a5e04a489619b1</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Yes">29db89e0db20230012a5e04a489619b4</condition>
+        <from display_value="check if this req is for request access">25db89e0db20230012a5e04a489619b3</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-09-11 10:24:05</sys_created_on>
+        <sys_id>fa429d64db20230012a5e04a489619f5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-11 10:24:05</sys_updated_on>
+        <to display_value="Check if application present or not">addb89e0db20230012a5e04a489619b4</to>
+    </wf_transition>
+    <wf_estimated_runtime_config action="INSERT_OR_UPDATE">
+        <estimated_run_time/>
+        <no_of_data_points>1</no_of_data_points>
+        <percentage_threshold_ert>20</percentage_threshold_ert>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-09-11 09:55:50</sys_created_on>
+        <sys_id>55db09e0db20230012a5e04a48961900</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-11 09:55:50</sys_updated_on>
+        <workflow_version display_value="UAM ADD REMOVE ACCESS NEW">51db09e0db20230012a5e04a48961900</workflow_version>
+    </wf_estimated_runtime_config>
+    <wf_workflow_version action="update_multiple" query="workflow=412ebc9cdb20230012a5e04a48961986^sys_id!=51db09e0db20230012a5e04a48961900">
+        <published>false</published>
+    </wf_workflow_version>
+</record_update>

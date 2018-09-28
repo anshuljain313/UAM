@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_14308_uam_user_a.UAM_LoadAccess</api_name>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>UAM_LoadAccess</name>
+        <script><![CDATA[function UAM_LoadAccess( ) { 
+
+  var app  = current.variables.select_application;
+	var user = current.variables.requested_for;
+	
+//Below code is for adding user to access entry in UAM
+var list = current.variables.select_access.toString();
+flag = false;
+var access_parent = '';
+var par = new GlideRecord('x_14308_uam_user_a_user_to_application');
+	par.addQuery('active', 'true');
+	par.addQuery('user', user);
+	par.addQuery('application', app);
+	par.query();
+	
+	if(par.next())
+		{
+		access_parent = par.sys_id;
+	}
+	
+	var filterString="";
+	var str = '';
+	var gr = new GlideRecord('x_14308_uam_user_a_user_to_access');
+	gr.addQuery('user', user);
+	gr.addQuery('application',access_parent);
+	gr.query();
+	
+	while(gr.next())
+		{
+		str = str+ "sys_id!="+gr.access+"^";
+		//name=A^active=true	
+		//access=15b17cd4db20230012a5e04a489619e1^active=true	
+	}	
+	//gs.addInfoMessage(gr.access);
+	//gs.log('ANSHUL'+gr.access);
+	filterString = str+"name=A^active=true";//+"active=true^nameSTARTSWITHTNT";
+	var filter = "active=true^nameSTARTSWITHA";
+	return filter;
+	
+}]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-09-10 14:13:41</sys_created_on>
+        <sys_id>938634d8db20230012a5e04a48961920</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>UAM_LoadAccess</sys_name>
+        <sys_package display_value="UAM User Access Management" source="x_14308_uam_user_a">5f8028a3db3213004b8de04a48961994</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="UAM User Access Management">5f8028a3db3213004b8de04a48961994</sys_scope>
+        <sys_update_name>sys_script_include_938634d8db20230012a5e04a48961920</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-11 13:47:38</sys_updated_on>
+    </sys_script_include>
+</record_update>
